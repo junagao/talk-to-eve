@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+	position: relative;
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 300;
+}
+
+h1 {
+	font-family: sans-serif;
+	text-align: center;
+	color: #3F3F3F;
+	font-size: 3rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+}
+
+#chat-container {
+	position: relative;
+}
+
+#chat-frame {
+	width: 80%;
+	position: fixed;
+	top: 5%;
+	bottom: 5%;
+	left: 10%;
+	background-color: #fff;
+	border-radius: 0.375rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#chat-header {
+	width: 100%;
+	text-align: center;
+	height: 4.4rem;
+	line-height:4.5rem;
+	border-bottom: 1px solid #eeeeee;
+}
+
+#output {
+	height: 34rem;
+	background-color: #fff;
+	overflow-y: scroll;
+	padding: 1.25rem;
+}
+
+.bot-chat {
+	margin-bottom: 1rem;
+	display: none;
+}
+
+.icn-bot {
+	background-color: #fa709a;
+	width: 30px;
+	height: 30px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.speech-bubble {
+	padding: 0.5rem 1rem;
+	display: inline-block;
+}
+
+.bot {
+	background-color: #F1F0F0;
+	border-radius: 3em 3em 3em 0em;
+	margin-left: 1rem;
+	margin-bottom: 0.5rem;
+	max-width: 28rem;
+}
+
+/*@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+	opacity: 0;
+  animation-name: fadeIn 2s ease-in 1 forwards;
+}*/
+
+.user-chat {
+	top: 1rem;
+	text-align: right;
+	display: none;
+}
+
+.icn-user {
+	background-color: #fee140;
+	width: 30px;
+	height: 30px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	margin-top: .2rem;
+	float: right;
+	display: inline-block;
+}
+
+.user {
+	background-color: #F1F0F0;
+	border-radius: 3em 3em 0em 3em;
+	margin-right: 1rem;
+	margin-bottom: 0.5rem;
+	max-width: 28rem;
+}
+
+#userinput { 
+	width:100%;
+	border-top: 1px solid #eeeeee;
+	padding: 1rem;
+	background-color: #fff;
+	position: relative;
+}
+
+#userinput input { 
+	padding: .5em 1em; 
+	width: 100%; 
+	border: none;
+  color: #000;
+  background-color: #eee;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.75rem;
+  border-radius: 0.125rem
+  font-weight: 300;
+}
